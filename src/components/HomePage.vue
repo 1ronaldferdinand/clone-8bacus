@@ -1,7 +1,8 @@
 <template>
-    <div style="h-100">
+    <div style="height: 100%;">
         <SocialMedia />
         <NavBar />
+        
         <div id="home" class="bg-black">
             <HomeContent/>
         </div>
@@ -9,7 +10,7 @@
             <ServiceContent/>
         </div>
         <div id="about_us">
-            <!-- About Us content -->
+            <AboutContent/>
         </div>
         <div id="events">
             <!-- Events content -->
@@ -31,13 +32,15 @@ import NavBar from '@/components/NavBar.vue';
 import SocialMedia from '@/components/SocialMedia.vue';
 import HomeContent from '@/components/contents/HomeContent.vue';
 import ServiceContent from '@/components/contents/ServiceContent.vue';
+import AboutContent from '@/components/contents/AboutContent.vue';
   
 export default {
     components: {
         NavBar,
         SocialMedia,
         HomeContent,
-        ServiceContent
+        ServiceContent,
+        AboutContent,
     }
 }
 </script>

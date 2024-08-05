@@ -47,6 +47,7 @@ export default {
 }
 
 .my-container {
+    padding-top: 100px;
     position: relative;
     width: 100%;
     height: fit-content;
