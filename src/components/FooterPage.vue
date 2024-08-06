@@ -1,14 +1,16 @@
 <template>
     <div class="d-flex flex-column align-items-center">
         <div class="d-flex align-items-start justify-content-between w-100" style="padding: 64px 100px;">
-            <div class="d-flex flex-column col-4" style="gap: 10px;">
-                <img src="@/assets/cropped-top-logo-head.png" height="40" width="150">
-                <span class="light-text">
-                    We go beyond services; we provide<br> solutions that empower your business to<br> thrive.
-                </span>
-                <div class="d-flex flex-column">
-                    <span class="hard-text">Company landline number:</span>
-                    <span class="light-text">02-53104708</span>
+            <div class="d-flex flex-column align-items-center col-4" style="gap: 10px;">
+                <div class="d-flex flex-column" style="width: fit-content;">
+                    <img src="@/assets/cropped-top-logo-head.png" height="40" width="150">
+                    <span class="light-text">
+                        We go beyond services; we provide<br> solutions that empower your business to<br> thrive.
+                    </span>
+                    <div class="d-flex flex-column">
+                        <span class="hard-text">Company landline number:</span>
+                        <span class="light-text">02-53104708</span>
+                    </div>
                 </div>
             </div>
             <div class="col-3 d-flex flex-column">
