@@ -273,6 +273,10 @@ export default {}
         gap: 20px
     }
 
+    .section {
+        max-width: none;
+    }
+
     .section.step-2 {
         left: 0; /* Adjust as needed */
     }
