@@ -1,11 +1,11 @@
 <template>
     <div>
         <div class="top-background"></div>
-        <div class="my-card-container">
-            <div class="col-6 d-flex justify-content-center">
+        <div class="my-card-container d-flex flex-column flex-lg-row align-items-center justify-content-center">
+            <div class="col-12 col-lg-6 d-flex justify-content-center">
                 <img height="360" src="@/assets/images/developing-programmer-team-development-website-design-coding-technologies.jpg" alt="">
             </div>
-            <div class="col-6 d-flex flex-column justify-content-between">
+            <div class="col-12 col-lg-6 d-flex flex-column justify-content-between" style="gap: 20px;">
                 <div class="d-flex justify-content-center">
                     <div class="about-us-text position-relative">
                         <span class="about-text">About</span>
