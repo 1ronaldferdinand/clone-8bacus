@@ -85,11 +85,11 @@ p {
     }
 
     .service-text {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .our-logo {
-        height: 34px !important;
+        height: 30px !important;
     }
 }
 </style>

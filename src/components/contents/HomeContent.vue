@@ -12,7 +12,7 @@
                 </div>
                 <div class="d-flex flex-column" style="gap: 20px;">
                     <b-button pill>APPLY FOR A JOB</b-button>
-                    <b-button style="padding: 4px 40px !important;" pill>REQUEST FOR <br> SERVICE CONSULTATION</b-button>
+                    <b-button class="long-button" pill>REQUEST FOR <br> SERVICE CONSULTATION</b-button>
                 </div>
             </div>
             <div></div>
@@ -85,9 +85,13 @@ button:hover {
     color: white;
 }
 
+.long-button {
+    padding: 4px 40px !important;
+}
+
 @media (max-width: 992px) {
     .welcome-text {
-        font-size: 32px;
+        font-size: 30px;
         line-height: 40px;
     }
 
@@ -102,6 +106,10 @@ button:hover {
 
     button {
         width: 100%;
+    }
+
+    .long-button {
+        padding: 4px 20px !important;
     }
 }
 </style>
