@@ -142,4 +142,14 @@ export default {
     height: 300px;
     border: none;
 }
+
+@media (max-width: 992px) {
+    .service-text {
+        font-size: 32px;
+    }
+
+    .my-container {
+        padding: 50px 40px 0px 40px;
+    }
+}
 </style>

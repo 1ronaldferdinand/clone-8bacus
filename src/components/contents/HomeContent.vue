@@ -5,14 +5,14 @@
             <div class="d-flex flex-column col-12 col-md-6" style="gap: 20px;">
                 <div class="d-flex flex-column welcome-text">
                     <h2 class="welcome-text">
-                        Transforming
-                        your business.
+                        Transforming<br>
+                        your business.<br>
                         <span style="color: #F37721;">Be our partner.</span>
                     </h2>
                 </div>
                 <div class="d-flex flex-column" style="gap: 20px;">
                     <b-button pill>APPLY FOR A JOB</b-button>
-                    <b-button pill>REQUEST FOR <br> SERVICE CONSULTATION</b-button>
+                    <b-button style="padding: 4px 40px !important;" pill>REQUEST FOR <br> SERVICE CONSULTATION</b-button>
                 </div>
             </div>
             <div></div>
@@ -35,7 +35,7 @@ export default {
 
     height: fit-content;
     padding: 80px 0px 100px 0px;
-    margin: 0px 92px;
+    margin: 0px 80px;
 }
 
 .welcome-text {
@@ -73,7 +73,7 @@ button {
 
     width: 50%;
 
-    padding: 12px 70px;
+    padding: 12px 40px;
 
     border: none;
     background-color: white;
@@ -86,6 +86,15 @@ button:hover {
 }
 
 @media (max-width: 992px) {
+    .welcome-text {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .home {
+        padding: 100px 0px 120px 0px;
+    }
+
     .my-background {
         width: 100%;
         background-size: cover;

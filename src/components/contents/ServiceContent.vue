@@ -6,11 +6,11 @@
                 <h2 class="service-text">What we <span style="color:#F37721"> offer? </span></h2>
             </div>
         </div>
-        <div class="my-card-container">
+        <div class="my-card-container d-flex flex-column align-items-center flex-lg-row align-items-lg-start justify-content-start justify-content-lg-center">
             <div class="my-card">
-                <div class="d-flex flex-column align-items-center" style="gap: 20px;">
+                <div class="my-card-content-area d-flex flex-column align-items-center">
                     <div>
-                        <img height="100" src="@/assets/icons/8b-icon-0001.png" alt="">													
+                        <img height="150" src="@/assets/icons/8b-icon-0001.png" alt="">													
                     </div>
                     <div class="my-card-title-container">
                         <span class="my-card-title">RECRUITMENT</span>		
@@ -25,9 +25,9 @@
             </div>
 
             <div class="my-card">
-                <div class="d-flex flex-column align-items-center" style="gap: 20px;">
+                <div class="my-card-content-area d-flex flex-column align-items-center">
                     <div>
-                        <img height="100" src="@/assets/icons/8b-icon-0002.png" alt="">													
+                        <img height="150" src="@/assets/icons/8b-icon-0002.png" alt="">													
                     </div>
                     <div class="my-card-title-container">
                         <span class="my-card-title">ADMINISTRATIVE</span>		
@@ -42,9 +42,9 @@
             </div>
 
             <div class="my-card">
-                <div class="d-flex flex-column align-items-center" style="gap: 20px;">
+                <div class="my-card-content-area d-flex flex-column align-items-center">
                     <div>
-                        <img height="100" src="@/assets/icons/8b-icon-0004.png" alt="">													
+                        <img height="150" src="@/assets/icons/8b-icon-0004.png" alt="">													
                     </div>
                     <div class="my-card-title-container">
                         <span class="my-card-title">IMMIGRATION</span>		
@@ -105,8 +105,6 @@ export default {}
 .my-card-container {
     padding: 50px 0px; 
     margin: 0px 75px;
-    display: flex;
-    justify-content: center;
 
     gap: 20px;
 }
@@ -118,8 +116,8 @@ export default {}
     justify-content: space-between;
     padding: 10px;
 
-    height: 350px;
-    width: 273px;
+    height: 400px;
+    width: 300px;
 
     transition: transform 0.3s, opacity 0.3s, border 0.3s, border-radius 0.3s;
 }
@@ -168,5 +166,30 @@ button {
 button:hover {
     background-color: #F37721;
     color: white;
+}
+
+.my-card-content-area {
+    gap: 20px;
+}
+
+@media (max-width: 992px) {
+    .service-text {
+        font-size: 32px;
+    }
+
+    .my-card-container {
+        gap: 32px;
+        margin: 0px 40px;
+    }
+
+    .my-card {
+        height: fit-content;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .my-card-content-area {
+        gap: 14px;
+    }
 }
 </style>

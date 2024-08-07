@@ -3,7 +3,7 @@
         <div class="top-background"></div>
         <div class="my-container bg-black">
             <h2 class="service-text">Industries We Serve</h2>
-            <div class="d-flex align-items-start justify-content-center" style="gap: 20px;">
+            <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-start justify-content-lg-center" style="gap: 20px;">
                 <div class="my-card">
                     <img src="@/assets/icons/8b-icon-0010.png" height="80" style="margin: 0px 60px;">
                     <span>Technology</span>
@@ -21,7 +21,7 @@
                     <span>Banking & Infrastructure</span>
                 </div>
             </div>
-            <div class="d-flex align-items-start justify-content-center" style="gap: 20px;">
+            <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-start justify-content-lg-center" style="gap: 20px;">
                 <div class="my-card">
                     <img src="@/assets/icons/8b-icon-0014.png" height="80" style="margin: 0px 60px;">
                     <span>Financial Technology</span>
@@ -39,7 +39,7 @@
                     <span>Manufacturing & Others</span>
                 </div>
             </div>
-            <p style="max-width: 980px; color: white; font-size: 12px; font-family: 'Roboto', sans-serif;">
+            <p class="service-descriptions" style="max-width: 980px; color: white; font-size: 12px; font-family: 'Roboto', sans-serif;">
                 Your concerns are our priority. 
                 We proactively collaborate with you to understand your challenges and goals, 
                 ensuring that our services are perfectly aligned with your vision for success. 
@@ -48,7 +48,7 @@
             </p>
         </div>
         <div class="mid-background"></div>
-        <div class="my-container" style="padding: 50px 80px;">
+        <div class="my-container slider-container" style="padding: 50px 80px;">
             <span class="our-partners-text">Our Partners</span>
             <SliderImage/>
         </div>
@@ -142,5 +142,34 @@ export default {
     width: 100%;
     height: 300px;
     border: none;
+}
+
+@media (max-width: 992px) {
+    .my-container {
+        padding: 0px 40px;
+    }
+
+    .service-descriptions {
+        max-width: 90% !important;
+    }
+
+    .service-text {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .my-card {
+        width: 90%;
+        padding: 14px;
+    }
+
+    .my-card img {
+        height: auto;
+        width: 50%;
+    }
+
+    .slider-container {
+        padding: 50px 40px 0px 40px !important;
+    }
 }
 </style>

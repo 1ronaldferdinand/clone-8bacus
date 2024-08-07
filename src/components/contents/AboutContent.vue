@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="top-background"></div>
-        <div class="my-card-container d-flex flex-column flex-lg-row align-items-center justify-content-center">
+        <div class="my-card-container about-head d-flex flex-column flex-lg-row align-items-center justify-content-center">
             <div class="col-12 col-lg-6 d-flex justify-content-center">
                 <img height="360" src="@/assets/images/developing-programmer-team-development-website-design-coding-technologies.jpg" alt="">
             </div>
@@ -17,14 +17,14 @@
                 </p>
             </div>
         </div>
-        <div class="d-flex align-items-center" style="gap: 8px; justify-content: space-around; padding: 0px 8px; padding-bottom: 32px;">
-            <div class="line-spacer w-100"></div>
-            <span class="what-sets-up w-100 text-center">
+        <div class="d-flex align-items-center" style="justify-content: space-around; padding: 0px 8px; padding-bottom: 32px;">
+            <div class="line-spacer col-1 col-lg-4"></div>
+            <span class="what-sets-up w-auto text-center">
                 What Sets Us Apart?
             </span>
-            <div class="line-spacer w-100"></div>
+            <div class="line-spacer col-1 col-lg-4"></div>
         </div>
-        <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-start justify-content-md-center" style="padding: 10px 0px;">
+        <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-start justify-content-md-center service-container">
             <div class="my-card">
                 <img height="172" src="@/assets/icons/8b-icon-0005.png" alt="">													
                 <span class="my-card-title">Industry Expertise</span>
@@ -55,7 +55,7 @@
                 </p>
             </div>
         </div>
-        <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-start justify-content-md-center" style="padding: 10px 0px;">
+        <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-start justify-content-md-center service-container">
             <div class="my-card">
                 <img height="172" src="@/assets/icons/8b-icon-0008.png" alt="">													
                 <span class="my-card-title">Transparent Processes</span>
@@ -267,9 +267,33 @@ export default {}
     left: 180px; /* Adjust as needed */
 }
 
+.service-container {
+    padding: 10px 0px;
+}
+
 @media (max-width: 992px){
+    .service-container {
+        padding: 10px 40px;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .my-card-container {
+        margin: 0px 40px;
+        padding-bottom: 50px;
+    }
+
+    .about-us-text {
+        font-size: 25vw;
+    }
+
+    .about-head img {
+        height: auto;
+        width: 100%;
+    }
+
     .other-services {
-        padding: 100px 80px;
+        padding: 50px 40px;
         gap: 20px
     }
 
