@@ -278,6 +278,14 @@ export default {}
         margin-bottom: 20px;
     }
 
+    .my-card {
+        width: 100%;
+    }
+
+    .my-card p {
+        margin: 0px !important;
+    }
+
     .my-card-container {
         margin: 0px 40px;
         padding-bottom: 50px;

@@ -138,8 +138,20 @@ button {
 }
   
 @media (max-width: 992px) {
+    .prev {
+        left: 0px;
+    }
+
+    .next {
+        right: 0px;
+    }
+
+    .slider {
+        width: 90% !important;
+    }
+
     .slide img {
-        width: 100%;
+        width: 80%;
     }
 }
 </style>

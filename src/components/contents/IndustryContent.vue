@@ -154,7 +154,7 @@ export default {
     }
 
     .service-text {
-        font-size: 32px;
+        font-size: 28px;
         margin-bottom: 20px;
     }
 

@@ -190,7 +190,7 @@ button:hover {
     }
 
     .why-container img {
-        width: 100% !important;
+        width: 80% !important;
     }
 
     .why-area {
