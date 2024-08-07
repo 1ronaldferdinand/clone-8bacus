@@ -1,11 +1,18 @@
 <template>
     <div>
-        <div class="my-container" style="padding-top: 100px;">
+        <div class="my-container">
             <h2 class="service-text">Careers</h2>
             <div class="careers-container">
                 <div class="row">
                     <div
-                        class="column"
+                        class="row d-lg-none"
+                        v-for="(career, index) in careers"
+                        :key="index"
+                    >
+                        <button class="career-button">{{ career }}</button>
+                    </div>
+                    <div
+                        class="column d-none d-lg-flex"
                         v-for="(career, index) in careers"
                         :key="index"
                     >
@@ -15,9 +22,9 @@
             </div>
         </div>
         <div class="mid-background"></div>
-        <div class="my-container flex-row justify-content-center" style="padding: 50px 160px; gap: 50px;">
+        <div class="my-container why-container flex-column flex-lg-row align-items-center justify-content-center">
             <img src="@/assets/images/8b-image-0001.jpg" width="50%">
-            <div class="d-flex flex-column why-area w-50">
+            <div class="d-flex flex-column why-area">
                 <span>Why Should You Choose Us?</span>
                 <p>
                     Welcome to 8Bacus Corp., where excellence meets innovation. 
@@ -93,7 +100,7 @@ export default {
 }
   
 .my-container {
-    padding: 50px 80px;
+    padding: 100px 80px 50px 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -148,6 +155,7 @@ button:hover {
 
 .why-area {
     gap: 20px;
+    width: 50%;
 }
 
 .why-area span {
@@ -161,8 +169,45 @@ button:hover {
 .why-area p {
     color: black;
     font-family: "Roboto", sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 20px;
+}
+
+.why-container {
+    padding: 50px 80px; 
+    gap: 50px;
+}
+
+@media (max-width: 992px) {
+    .my-container {
+        padding: 100px 40px 0px 40px;
+    }
+
+    .why-container {
+        padding: 50px 40px;
+        gap: 20px;
+    }
+
+    .why-container img {
+        width: 100% !important;
+    }
+
+    .why-area {
+        width: 100%;
+        align-items: center;
+    }
+
+    .why-area span {
+        font-size: 20px;
+    }
+
+    .why-area p {
+        text-align: center;
+    }
+
+    .service-text {
+        font-size: 32px;
+    }
 }
 </style>  

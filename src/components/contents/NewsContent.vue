@@ -2,7 +2,7 @@
     <div>
         <div class="my-container">
             <h2 class="service-text">News</h2>
-            <div class="news-container">
+            <div class="news-container d-flex flex-column flex-lg-row justify-content-center">
                 <div class="news-card" v-for="(news, index) in newsItems" :key="index">
                     <div class="image-container">
                         <div style="padding: 20px 0px;">
@@ -56,8 +56,6 @@ export default {
   
 <style scoped>
 .news-container {
-    display: flex;
-    justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -158,5 +156,19 @@ export default {
     font-size: 48px;
     font-weight: 600;
     color: black;
+}
+
+@media (max-width: 992px) {
+    .my-container {
+        padding: 100px 40px 50px 40px;
+    }
+
+    .service-text {
+        font-size: 32px;
+    }
+
+    .news-card {
+        width: 100%;
+    }
 }
 </style>

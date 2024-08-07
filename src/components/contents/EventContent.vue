@@ -4,8 +4,11 @@
             <h2 class="service-text">Company Events</h2>
             <div class="gallery-container">
                 <div class="row" v-for="(row, rowIndex) in displayedImages" :key="rowIndex">
-                    <div class="column" v-for="(image, colIndex) in row" :key="colIndex">
-                        <img :src="image" height="262" width="363" alt="Gallery Image" class="gallery-image" />
+                    <div class="row d-lg-none" v-for="(image, colIndex) in row" :key="colIndex">
+                        <img :src="image" alt="Gallery Image" class="gallery-image" />
+                    </div>
+                    <div class="column d-none d-lg-flex" v-for="(image, colIndex) in row" :key="colIndex">
+                        <img :src="image" alt="Gallery Image" class="gallery-image" />
                     </div>
                 </div>
             </div>
@@ -149,7 +152,13 @@ export default {
     }
 
     .my-container {
-        padding: 50px 40px 0px 40px;
+        padding: 100px 40px 0px 40px;
+    }
+
+    .gallery-image {
+        height: auto;
+        width: 100%;
+        padding: 10px;
     }
 }
 </style>

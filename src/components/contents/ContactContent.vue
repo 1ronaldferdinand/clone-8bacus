@@ -4,15 +4,13 @@
         <div class="my-container bg-black">
             <div class="d-flex align-items-center justify-content-center gap-3">
                 <h2 class="service-text m-0 text-white">Connect With</h2>
-                <img src="@/assets/cropped-top-logo-head.png" height="54">
+                <img class="our-logo" src="@/assets/cropped-top-logo-head.png" height="54">
             </div>
             <p>We are your dedicated partner on the path to success.</p>
-            <div>
+            <div class="map-container">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1930.8562713776294!2d121.019265!3d14.558424!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c94ae4f2887d%3A0x4f8768415d368f09!2sPBCom%20Tower!5e0!3m2!1sen!2sid!4v1722946084901!5m2!1sen!2sid"
-                    width="800"
-                    height="400"
-                    style="border:0;"
+                    class="responsive-iframe"
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
@@ -55,13 +53,43 @@ p {
 
 .top-background {
     background-image: url('@/assets/bg/background10.png'); 
-    background-size: cover; /* Adjust the background size */
-    background-position: center; /* Position the background in the center */
-    background-repeat: no-repeat; /* Ensure the background doesn't repeat */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
     height: 300px;
     border: none;
     position: relative;
     top: 2px;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media (max-width: 992px) {
+    .my-container {
+        padding: 0px 40px 30px 40px;
+        gap: 10px;
+    }
+
+    .service-text {
+        font-size: 24px;
+    }
+
+    .our-logo {
+        height: 34px !important;
+    }
 }
 </style>

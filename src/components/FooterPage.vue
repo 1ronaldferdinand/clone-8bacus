@@ -1,9 +1,9 @@
 <template>
     <div class="d-flex flex-column align-items-center">
-        <div class="d-flex align-items-start justify-content-between w-100" style="padding: 64px 100px;">
-            <div class="d-flex flex-column align-items-center col-4" style="gap: 10px;">
-                <div class="d-flex flex-column" style="width: fit-content;">
-                    <img src="@/assets/cropped-top-logo-head.png" height="40" width="150">
+        <div class="my-container d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-between w-100" style="padding: 64px 100px;">
+            <div class="d-flex flex-column align-items-center col-12 col-lg-4" style="gap: 10px;">
+                <div class="d-flex flex-column align-items-center align-items-lg-start identity-container" style="width: fit-content;">
+                    <img class="our-logo" src="@/assets/cropped-top-logo-head.png" height="40" width="150">
                     <span class="light-text">
                         We go beyond services; we provide<br> solutions that empower your business to<br> thrive.
                     </span>
@@ -13,7 +13,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 d-flex flex-column">
+            <div class="col-12 col-lg-3 d-flex flex-column">
                 <span class="hard-text" style="font-size: 16px; padding-bottom: 10px;">Our Services</span>
                 <div class="light-text">
                     Recruitment<br>
@@ -25,14 +25,14 @@
                     Business Consultancy<br>
                 </div>
             </div>
-            <div class="col-3 d-flex flex-column">
+            <div class="col-12 col-lg-3 d-flex flex-column">
                 <span class="hard-text" style="font-size: 16px; padding-bottom: 10px;">Legal</span>
                 <div class="light-text">
                     Privacy Policy<br>
                     Terms and Conditions<br>
                 </div>
             </div>
-            <div class="col-2 d-flex flex-column align-items-center gap-2">
+            <div class="col-12 col-lg-2 d-flex flex-row flex-lg-column align-items-center justify-content-center justify-content-lg-start gap-2">
                 <img src="@/assets/icons/fb.png" height="20" width="20">
                 <img src="@/assets/icons/insta.png" height="20" width="20">
                 <img src="@/assets/icons/linkedin.png" height="20" width="20">
@@ -76,5 +76,33 @@ export default {}
     font-weight: 600;
     line-height: 13px;
     background-color: #F9A438;
+}
+
+@media (max-width: 992px) {
+    .my-container {
+        padding: 60px 40px !important;
+        gap: 20px;
+    }
+
+    .our-logo {
+        height: 58px;
+        width: auto;
+        padding-bottom: 10px;
+    }
+
+    .identity-container {
+        width: 100% !important;
+        gap: 10px;
+    }
+
+    .light-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hard-text {
+        width: 100%;
+        text-align: center;
+    }
 }
 </style>

@@ -87,7 +87,7 @@ export default {
 
 .my-card span{
     font-family: "Roboto", Sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 18px;
     font-weight: 600;
     color: black;
@@ -161,6 +161,10 @@ export default {
     .my-card {
         width: 90%;
         padding: 14px;
+    }
+
+    .my-card span {
+        font-size: 18px;
     }
 
     .my-card img {

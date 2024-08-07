@@ -19,11 +19,10 @@
         <div id="careers">
             <CareerContent/>
         </div>
-        <!--
         <div id="news">
             <NewsContent/>
         </div>
-        <ContactContent/> -->
+        <ContactContent/>
         <FooterPage/>
     </div>
 </template>
@@ -37,8 +36,8 @@ import AboutContent from '@/components/contents/AboutContent.vue';
 import IndustryContent from '@/components/contents/IndustryContent.vue';
 import EventContent from '@/components/contents/EventContent.vue';
 import CareerContent from '@/components/contents/CareerContent.vue';
-// import NewsContent from '@/components/contents/NewsContent.vue';
-// import ContactContent from '@/components/contents/ContactContent.vue';
+import NewsContent from '@/components/contents/NewsContent.vue';
+import ContactContent from '@/components/contents/ContactContent.vue';
 import FooterPage from '@/components/FooterPage.vue';
 
 export default {
@@ -51,6 +50,8 @@ export default {
         IndustryContent,
         EventContent,
         CareerContent,
+        NewsContent,
+        ContactContent,
         FooterPage,
     }
 }
